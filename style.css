@@ -1,0 +1,150 @@
+Body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+#contact-btn {
+    background-color: #5652e8;
+    border-color: #5652e8;
+    margin-bottom: 1rem;
+    
+   
+}
+
+/* ------------------------------------------------------------------------ */
+/* main banner section */
+#mainbanner {
+    width: 90%;
+    height: 27rem;
+    background-image: url(./images/mainbanner.png);
+    background-repeat: no-repeat;
+}
+ul {
+    padding-top:1rem;
+}
+a {
+    color:#5652e8;
+}
+
+a:hover {
+    color:#00c6db;
+}
+a:active {
+    color: #00c6db;
+  }
+
+.banner-right {
+    padding-left: 8rem;
+    padding-top:6rem;
+    padding-bottom: 4rem;
+    color: rgb(10, 61, 98);
+    float: right;
+ }
+ .banner-right p {
+    font-size: 1rem;
+
+ }
+.space-div {
+    height: 3rem;
+    /* background-color: rgb(255, 255, 255);  */
+    max-width: 100%;
+}
+
+
+/* about me section */
+
+h4 {
+    padding-bottom: 1rem;
+}
+
+.about {
+    background-color: #c6c6e5;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+.about a:hover {
+    color: rgb(12, 36, 97);
+}
+
+.about-row {
+    margin: 1rem;
+}
+.about p {
+margin-left: 1rem;
+}
+
+/* project section */
+.projects {
+    display: inline;
+    
+}
+.projects p {
+    font-size: 0.7rem;
+}
+.profile-pic {
+    width: 13rem;
+    border-radius: 50%;
+    box-shadow: 15px -6px ;
+}
+
+#subhead {
+    margin-left: 2rem;
+}
+.section-header {
+    margin-left: 2rem;
+    background-color: rgba(249, 249, 250, 0.5);
+    
+}
+.cardimg {
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.6rem;
+
+    
+}
+
+.footer {
+    justify-content: center;
+    text-align: center;
+}
+
+#footerstyle {
+    background-color: #c6c6e5;
+    height: 12rem ;
+    width: 100%;
+    margin:0;
+}
+
+.footer p {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* footer icons */
+.icon {
+    list-style-type: none;
+}
+
+.icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.icon li {
+    display: inline
+    
+}
+
+.colgap{
+    column-gap: 40px;
+    margin:1rem;
+    vertical-align: middle;
+}w
