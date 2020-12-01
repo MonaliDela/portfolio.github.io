@@ -1,58 +1,310 @@
 Body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto Slab', serif;
+    color: #3f3679;
 }
 
-abp {
-    
-}
-
-#contact-btn {
-    background-color: #5652e8;
-    border-color: #5652e8;
+.contact-btn {
+    background:  rgba(244,98,117,1);
+    /* background: linear-gradient(320deg, rgba(248,175,35,1) 21%, 100%); */
+    border-color: rgba(244,98,117,1);
+    /* background-color: #5652e8;
+    border-color: #5652e8; */
     margin-bottom: 1rem;
+    color: white;
+}
+.contact-btn:hover {
+    background-color: #3f3679;
+    border-color: #3f338f;
+    color: white;
     
+}
+
+.contact-btn:active {
+    background: rgb(206, 142, 25);
+    border-color: rgb(248,175,35);
+    color: white;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* COMMON */
+/* .................................................................................................................................... */
+.readmore {
+    font-size: 0.7rem;
+}
+
+/* NAVIGATION */
+/* .................................................................................................................................... */
+ul {
+    float: center;
+    justify-content: center;
+    margin-bottom: 2rem;;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav {
+    width: 100%;
+    background: rgb(248,175,35);
+    /* background: radial-gradient(circle, rgba(248,175,35,1) 0%, rgba(244,98,117,1) 100%); */
+}
+.nav a {
+    color:#3f3679;
+}
+.nav a:hover {
+    color:#f1ecec;
+    background-color: #f46275;
+}
+.nav a:active {
+    color:#63bce7;
+}
+
+/* MAIN BANNER*/
+/* .................................................................................................................................... */
+.welcome {
+    /* padding: 10rem; */
+
+}
+.welcome p {
+    font-size: 0.8rem;
+}
+
+.waveimg {
+    width: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
    
 }
 
-/* ------------------------------------------------------------------------ */
-/* main banner section */
-#mainbanner {
-    width: 90%;
-    height: 27rem;
-    background-image: url(./images/mainbanner.png);
-    background-repeat: no-repeat;
+/* ABOUT ME */
+/* .................................................................................................................................... */
+.aboutsection {
+    background-image: url(./images/aboutback.jpg);
 }
-ul {
-    padding-top:1rem;
-}
-a {
-    color:#5652e8;
+.about {
+     
 }
 
-a:hover {
+
+/* .............................. */
+.leftcontainer {
+    width: 50%;
+    text-align: justify;
+    padding: 1rem;
+   
+
+}
+.leftcontainer p {
+    font-size: 0.8rem;
+}
+.profpic {
+    width: 191px;
+    box-shadow: 11px -9px;
+    
+ 
+}
+
+/* SKILLS */
+/* .................................................................................................................................... */
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+.flex-container > .skilldiv {
+   
+    /* background-color: #f1f1f1; */
+    width: 100px;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .skillimg{
+      width: 100px;
+      text-align: center;
+  }
+
+  .name {
+      font-size: 0.6rem;
+  }
+
+
+/* PROJECT */
+/* .................................................................................................................................... */
+/* flip cards for projects styles  */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    
+    color: black;
+  }
+
+  .cardback1 {background-color: #f8af23;}
+  .cardback2 {background-color: #f46275;}
+  .cardback3 {background-color: #63bce7;}
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(214, 214, 214);
+    color: rgb(233, 123, 21);
+    transform: rotateY(180deg);
+  }
+  .flip-card-front h5 {
+      margin-top: 1rem;;
+  }
+  .flip-card-back p {
+      font-size: 0.7rem;
+      margin: 1rem;
+      
+  }
+
+/* FOOTER */
+/* .................................................................................................................................... */
+
+/* footer icons */
+.icon {
+    list-style-type: none;
+    padding-top: 3.5rem;
+}
+.icon img {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+.icon li {
+    display: inline;
+}
+.icon p {
+    font-size: 0.6rem;
+}
+.foot {
+    text-align: center;
+}
+.icon a {
+    text-decoration: none;
+}
+.foot p {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.icon img:hover {
+    border: 3px solid #f1ecec;
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 1.9rem;
+
+}
+#footernav {
+    /* class name for all the styles- important */
+    margin-top: 3.5rem;
+    
+}
+
+#footernav ul {
+    /* float: right; */
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+#footernav li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 0.8rem; 
+}
+#footernav a {
+    color:#233495;
+    
+}
+#footernav a:hover {
+    color: #f1ecec ;
+    background-color: #f46275;
+}
+#footernav a:active {
+    color:#63bce7;
+}
+
+.footerback {
+    background-color: #63bce7;
+}
+
+.footerimage {
+    margin-top: 2rem;
+}
+
+.phone {
+    font-size: 0.8rem;
+}
+
+.phone:hover {
+    color: #f1ecec;
+    font-size: 1rem;
+}
+/* #proj1 #proj2 #proj3 img {
+    width: 260px;
+    height: 150px;
+}
+
+#proj1 {background-image: url(./images/taskproject.JPG);}
+#proj2 {background-image: url(./images/weatherApp.jpg); background-repeat: no-repeat; }
+#proj3 {background-image: url(./images/landing.JPG);} */
+
+
+
+/* a {
+    color:#5652e8;
+} */
+
+/* a:hover {
     color:#00c6db;
 }
 a:active {
     color: #00c6db;
-  }
+  } */
 
-.banner-right {
-    padding-left: 8rem;
-    padding-top:6rem;
-    padding-bottom: 4rem;
-    color: rgb(10, 61, 98);
-    float: right;
- }
- .banner-right p {
-    font-size: 1rem;
-
- }
-.space-div {
+  .space-div {
     height: 3rem;
-    /* background-color: rgb(255, 255, 255);  */
+    /* background-color: black;  */
     max-width: 100%;
 }
+
 
 
 /* about me section */
@@ -61,100 +313,127 @@ h4 {
     padding-bottom: 1rem;
 }
 
-.about {
-    
-  
+/* .about {
     width: 100%;
     height: 12rem;
-    background-color: #c6c6e5;
+    background: rgb(237,240,244);
+    background: radial-gradient(circle, rgba(237,240,244,1) 0%, rgba(198,198,229,1) 100%);
     margin-bottom: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     
-}
-.about a:hover {
+} */
+/* .about a:hover {
     color: rgb(12, 36, 97);
-}
+} */
 
-.about-row {
+/* .about-row {
     margin: 1rem;
 
-}
-.about-row p{
+} */
+/* .about-row p{
   
-}
-.about-row p {
+} */
+/* .about-row p {
 margin-left: 1rem;
 font-size: 0.8rem;
 
-}
+} */
+
+
 
 /* project section */
 
-.projects {
-    /* display: inline;  */
+/* .projects {
+    
 }
 
 .projects p {
     font-size: 0.65rem;
 }
 .projects h5 {
+
   font-size: 1rem;;
 
-}
+} */
 
 /* --------------------------------------------------------------------- */
-#subhead {
+/* #subhead {
     margin-left: 2rem;
-}
-.section-header {
+} */
+/* .section-header {
     margin-left: 2rem;
     background-color: rgba(249, 249, 250, 0.5);
     
-}
-.cardimg {
+} */
+/* .cardimg {
     
     width: 150px;
     height: 90px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.6rem;
-
     
-}
+} */
 
-.footer {
+/* .footer {
     justify-content: center;
     text-align: center;
-}
+} */
 
-#footerstyle {
+/* #footerstyle {
     background-color: #c6c6e5;
     height: 12rem ;
     width: 100%;
     margin:0;
+} */
+
+
+
+
+/* skills bars */
+/* Make sure that padding behaves as expected */
+/* * {box-sizing:border-box} */
+
+/* Container for skill bars */
+.skillcontainer {
+  width: 100%; /* Full width */
+  background-color: rgb(214, 212, 212); /* Grey background */
 }
 
-.footer p {
-    font-size: 0.7rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.skills {
+  text-align: right; /* Right-align text */
+  color: rgb(14, 13, 13); /* White text color */
+  font-size: 0.7rem;
 }
 
-/* footer icons */
-.icon {
-    list-style-type: none;
-}
+.html {width: 90%; height: 0.5rem; margin-bottom: 0.7rem; background-color: #4CAF50;} /* Green */
+.css {width: 80%; height: 0.5rem; margin-bottom: 0.7rem; background-color: #2196F3;} /* Blue */
+.js {width: 65%; height: 0.5rem; margin-bottom: 0.7rem; background-color: #f44336;} /* Red */
+.bootstrap {width: 60%; height: 0.5rem; margin-bottom: 0.7rem; background-color: #808080;} /* Dark Grey */
+.wordpress {width:10%; height: 0.5rem; margin-bottom: 0.7rem; background-color: #ecdf25;} /* Dark Grey */
 
-.icon img {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-.icon li {
-    display: inline
+
+.skilldiv{
+    
+
+
+/* 
+
+
     
 }
+.skilldiv p {
+    font-size: 0.7rem;
+    margin-bottom: 
+    ;
+
+}
+ */
 
 
 
 /* phone visibility arrangements */
+
+
+
